@@ -829,8 +829,9 @@ def tf_workspace(path_prefix="", tf_repo_name=""):
       name = "softposit",
       sha256 = "37ae1c92fd906cb2e125928df9439f419fcf51ffb252df7964a3d275e49d4e07",
       urls = [
-          "https://storage.googleapis.com/posit-speedgo/softposit-0.4rc-68-gd75ff3e.tgz",
-          "https://s3-ap-southeast-1.amazonaws.com/posit-speedgo/softposit-0.4rc-68-gd75ff3e.tgz",
+          # "https://storage.googleapis.com/posit-speedgo/softposit-0.4rc-68-gd75ff3e.tgz",
+          # "https://s3-ap-southeast-1.amazonaws.com/posit-speedgo/softposit-0.4rc-68-gd75ff3e.tgz",
+	  "https://gitlab.com/cerlane/SoftPosit/-/archive/master/SoftPosit-master.tar",
       ],
       build_file = clean_dep("//third_party:softposit.BUILD"),
       strip_prefix = "softposit-0.4rc-68-gd75ff3e",
